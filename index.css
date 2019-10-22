@@ -1,0 +1,159 @@
+body{
+  background-color: black;
+  color:white;
+  font-family: sans-serif;
+}
+.container{
+
+}
+
+/* R1 */
+#R{
+
+}
+.rec-left{
+  position:absolute;
+  width:60px;
+  height:300px;
+  left:100px;
+  top:100px;
+  background-color: white;
+  z-index: 99;
+}
+.circle-out{
+  position:absolute;;
+  width:250px;
+  height:200px;
+  border-radius: 45%;
+  background-color: white;
+  left:100px;
+  top:100px;
+}
+#circle-in{
+  position:absolute;
+  width:140px;
+  height:120px;
+  border-radius: 50%;
+  background-color: black;
+  left:45px;
+  top:40px;
+}
+.parallelogram {
+     position: absolute;
+     width: 70px;
+     height: 121px;
+     transform: skew(20deg);
+     background-color: white;
+     left:250px;
+     top:279px;
+   }
+
+.circle-in-left{
+  animation-name: moving-left;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes moving-left {
+  from{left:45px;}
+  to{left:500px;}
+}
+/* O */
+#O{
+  position:absolute;
+  left:415px;
+  top:100px;
+}
+
+#outer-o{
+  position:absolute;
+  width:250px;
+  height:310px;
+  background-color: white;
+  border-radius: 45%;
+}
+#inner-o{
+  position:absolute;
+  width:130px;
+  height:230px;
+  background-color: black;
+  border-radius: 50%;
+  left:60px;
+  top:35px;
+}
+.huge{
+  animation-name: huge;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes huge {
+  from{width:130px;
+       height:230px;
+       left:60px;
+       top:35px;}
+  to{width:160px;
+    height:260px;
+    left:45px;
+    top:25px;}
+}
+/* A */
+#A{
+  position:absolute;
+  left:710px;
+  top:70px;
+}
+.tri-out{
+  position:absolute;
+  width: 0;
+  height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 340px solid white;
+}
+#tri-in{
+  position:absolute;
+  width: 0;
+  height: 0;
+  left:-95px;
+  top:140px;
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
+    border-bottom: 220px solid black;
+}
+#rec{
+  position:absolute;
+  width:150px;
+  height:40px;
+  top:235px;
+  left:-75px;
+  background-color: white;
+}
+.rec-top{
+  position:absolute;
+  left:100px;
+  top:-15px;
+  z-index: 99;
+  width:100px;
+  height:50px;
+  background-color: black;
+}
+#rec-bottom{
+  position:absolute;
+  width:250px;
+  height:50px;
+  top:340px;
+  left:30px;
+  background-color: black;
+}
+
+/* R */
+#R2{
+  position:absolute;
+  left:995px;
+}
+
+/* instructions */
+.instructions{
+  position:absolute;
+  left:7%;
+  top:60%;
+}
